@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js"></script>
 	</head>
+
 	<body>
 		<header>
 			<h1>change all the bad things</h1>
@@ -22,16 +23,27 @@
 
 			<form>
 				<label for="name">name:</label>
-				<input type="text" id="name" name="name" /><br />
+				<input type="text" id="name" name="name" required /><br />
 
 				<label for="date">date of birth: </label>
-				<input type="date" id="date" name="date" /><br />
+				<input type="date" id="date" name="date" required /><br />
 
 				<label for="email">email: </label>
-				<input type="email" id="email" name="email" /><br />
+				<input type="email" id="email" name="email" required /><br />
 
 				<label for="tel">phone: </label>
 				<input type="tel" id="tel" name="tel" /><br />
+
+				<fieldset>
+					<legend>how would you like to be contacted?</legend>
+
+					<input type="checkbox" id="contactEmail" name="contactEmail" />
+					<label for="contactEmail">by email</label><br />
+
+					<input type="checkbox" id="contactTel" name="contactTel" />
+					<label for="contactTel">by phone</label>
+				</fieldset>
+				<br />
 
 				<button type="submit">submit</button>
 			</form>
@@ -40,6 +52,7 @@
 			<address>
 				change all the bad things<br />
 				Change House<br />
+				Change Street<br />
 				London<br />
 				EC1 2DE
 			</address>
